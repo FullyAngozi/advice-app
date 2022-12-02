@@ -57,8 +57,20 @@ body img {
   border: none;
   cursor: pointer;
 }
+.main .main_container .icon img {
+  pointer-events: none;
+}
 .main .main_container .icon:hover {
   background-color: hsl(150deg, 100%, 66%);
   box-shadow: 0px 0px 30px rgb(82, 255, 168);
   color: hsl(218deg, 23%, 16%);
+}
+
+@media (max-width: 768px) {
+  .main_container {
+    max-width: 400px;
+  }
+  .main_container .main_border {
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

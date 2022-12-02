@@ -68,12 +68,30 @@ body {
       border: none;
       cursor: pointer;
 
+      img {
+        pointer-events: none;
+      }
+
       &:hover {
         background-color: $Neon-Green;
         box-shadow: 0px 0px 30px rgba(82, 255, 168, 1);;
         color: $Dark-Blue;
         
       }
+    }
+  }
+}
+
+@media (max-width: 768px ) {
+  .main_container {
+    max-width: 400px;
+
+    
+
+    .main_border {
+      max-width: 300px;
+
+      
     }
   }
 }
