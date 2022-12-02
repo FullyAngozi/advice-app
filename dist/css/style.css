@@ -1,7 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 28px;
-  background-color: hsl(150deg, 100%, 66%);
+  background-color: hsl(218deg, 23%, 16%);
   font-family: "Manrope", sans-serif;
   font-weight: 800;
+}
+body img {
+  display: block;
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main_container {
+  position: relative;
+  background-color: white;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(217deg, 19%, 24%);
+  color: hsl(193deg, 38%, 86%);
+  padding: 40px 35px;
+  border-radius: 1.5rem;
+}
+.main .main_container .main_title {
+  color: hsl(150deg, 100%, 66%);
+  font-size: 1rem;
+}
+.main .main_container .main_advice {
+  padding: 1rem;
+}
+.main .main_container .main_border {
+  color: hsl(217deg, 19%, 38%);
+  padding: 1rem;
+}
+.main .main_container .icon {
+  position: absolute;
+  bottom: -20px;
+  background-color: hsl(150deg, 100%, 66%);
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.main .main_container .icon:hover {
+  background-color: hsl(150deg, 100%, 66%);
+  box-shadow: 0px 0px 30px rgb(82, 255, 168);
+  color: hsl(218deg, 23%, 16%);
 }/*# sourceMappingURL=style.css.map */

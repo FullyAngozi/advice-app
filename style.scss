@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
 
 $grayish-blue: hsl(217, 19%, 38%);
 $Dark-Grayish-Blue: hsl(217, 19%, 24%);
@@ -9,12 +7,73 @@ $Dark-Blue: hsl(218, 23%, 16%);
 $Light-Cyan: hsl(193, 38%, 86%);
 $Neon-Green: hsl(150, 100%, 66%);
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-size: 28px;
-    background-color: $Neon-Green;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
+  font-size: 28px;
+  background-color: $Dark-Blue;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
 
+  img {
+    display: block;
+  }
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main_container {
+    position: relative;
+    background-color: white;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $Dark-Grayish-Blue;
+    color: $Light-Cyan;
+    padding: 40px 35px;
+    border-radius: 1.5rem;
+
+    .main_title {
+      color: $Neon-Green;
+      font-size: 1rem;
+    }
+    .main_advice {
+      padding: 1rem;
+    }
+
+    .main_border {
+      color: $grayish-blue;
+      padding: 1rem;
+    }
+
+    .icon {
+      position: absolute;
+      bottom: -20px;
+      background-color: $Neon-Green;
+      padding: 10px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $Neon-Green;
+        box-shadow: 0px 0px 30px rgba(82, 255, 168, 1);;
+        color: $Dark-Blue;
+        
+      }
+    }
+  }
 }
